@@ -11,11 +11,11 @@ num_of_emplaoyes <- 4
 employee_list <- list(employee_nAME, empid, num_of_emplaoyes)
 employee_list
 
-uid <- c(1, 2, 3, 4)
+uid <- c(1, 2, 3, NA)
 uni_name <- c("Acharya", "C.M.R", "Cambridge", "SIT")
 strength <- c(1000, 2000, 3000, 4000)
 result_percent <- c(80, 85, 90, 95)
 location <- c("Soladevanahalli", "Marathalli", "K.R. Puram", "Mysuru")
 
-uni_data <- data.frame(uid, uni_name, strength, result_percent, location)
-uni_data
+uni_data <- data.frame("ID" = uid, "University Name" = uni_name, "Strength" = strength, "Reslut" = result_percent,"Location" = location)
+summary(uni_data)
