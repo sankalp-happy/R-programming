@@ -75,3 +75,5 @@ if(num4 %% 2 == 0 & num4 > 0){
 } else {
   print("Zero")
 }
+
+#Create a calculator which can perform addition, subtraction, multiplication, division using switch case.
