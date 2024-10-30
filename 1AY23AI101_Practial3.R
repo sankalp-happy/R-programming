@@ -1,6 +1,6 @@
 # Create two 3x3 matrices A and B
-A <- matrix(c(1, 2, 3, 4, 5, 6, 7, 8, 9), nrow = 3, byrow = TRUE)
-B <- matrix(c(9, 8, 7, 6, 5, 4, 3, 2, 1), nrow = 3, byrow = TRUE)
+A <- matrix(seq(1, 9), nrow = 3, byrow = TRUE)
+B <- matrix(seq(9, 1), nrow = 3, byrow = TRUE)
 
 # Function to transpose a matrix
 transpose <- function(matrix) {

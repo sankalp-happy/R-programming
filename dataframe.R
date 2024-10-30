@@ -3,7 +3,7 @@
 user_id <- 1:5
 user_name <- c("user1", "user2", "user3", "user4", "user5")
 user_id
-user <- data.frame("ID" = user_id, "Name" =user_name, stringsAsFactors = TRUE)
+user <- data.frame("ID" = user_id, "Name" =user_name, stringsAsFactors = FALSE)
 str(user)
 summary(user)
 
@@ -22,13 +22,14 @@ str(user)
 
 user[1]
 user$Name
-user[["Location"]]
+user
+user[["ID"]]
 
 dim(user)
 
 #Add a new row in the data-frame user
 
-user <- rbind(user,c( 6,"user6", "Delhi", "Wipro"))
+ user <- rbind(user,c( 6,"user6", "Delhi", "Wipro"))
 user
 #Insert a column company using cbind function
 
